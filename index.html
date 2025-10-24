@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thalata: a Well Defined Theology</title>
+    <link rel="stylesheet" href="./bc.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="shortcut icon" href="th.png" type="image/x-icon">
+</head>
+<body data="{page:0}">
+    <div class="head">
+        <button class="hover-gray"><img src="./th.png" width="25px" alt="Thalata"></button>&emsp;&emsp;
+        <button class="hover-gray" onclick="$('page=0;')">Texts</button>&emsp;&emsp;
+        <button class="hover-gray" onclick="$('page=1;')">Bible</button>&emsp;&emsp;
+        <button class="hover-gray" onclick="$('page=2;')">Book of Mormon</button>
+    </div>
+    <div if="page==0">
+        <!-- The Body Section -->
+        <div class="body grid-2-75 ">
+            <div class="boxes ">
+                <p class="sans fw">&nbsp;&nbsp;&nbsp;Browse the Library</p>
+                <div class=" grid-2">
+                    <div class="box text-left b">
+                        <button onclick="$('page=3;')"><h3>Contra Mormonem</h3></button>
+                        <p>A Collection of 18 theological points rebutting Mormon theology. The Foundational Document of Thalata.</p>
+                    </div>
+                    <div class="box g">
+                        <h3>Commentary</h3>
+                        <p>An Index and Commentary for the Contra Mormonem. Including redefined footnotes and verse connections.</p>
+                    </div>
+                    <div class="box y">
+                        <h3>Aqua Contra Vinum</h3>
+                        <p>A Tractate combating the use of Sacramental Water versus Wine.</p>
+                    </div>
+                    <div class="box r">
+                        <h3>Secendum Biblia</h3>
+                        <p>A Short Tractate defining the lack of a Biblical Apostasy and the Book of Mormon.</p>
+                    </div>
+                    <div class="box lb">
+                        <h3>La Santa Iyetta</h3>
+                        <p>A Collection of Pseudo-Scriptural texts; namely the Book of Irkut, and the Book of Quarruiiq.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar">
+                <h3 class="not-hover fw">A Defense of the Kingdom</h3>
+                <hr><br>
+                <p>Thalata is a collection of several different writings and tractates on the flaws in Mormon theology. It centers around its defining text of the Summa Contra Mormonem. Everything—from the tractates to the contra—are offered free of charge for the use and support of the public.</p>
+                <br>
+                <h3 class="not-hover fw">Translations</h3>
+                <hr><br>
+                <a href="">English</a> <a href="">Français</a>
+                <br><br>
+                <em>Published on October 24, 2025</em>
+            </div>
+        </div>
+    </div>
+    <div if="page==1">
+        <iframe src="https://classicmc-studios.github.io/bible" frameborder="0" class=""></iframe>
+    </div>
+    <div if="page==2">
+        <iframe src="https://classicmc-studios.github.io/mormon" frameborder="0" class=""></iframe>
+    </div>
+    <div incl="./body/scm.html" if="page==3"></div>
+    <script src='https://snojs.github.io/sno/crystal.js'></script>
+</body>
+</html>
