@@ -26,22 +26,24 @@
                         <p>A Collection of 18 theological points rebutting Mormon theology. The Foundational Document of Thalata.</p>
                     </div>
                     <div class="box g">
-                        <h3>Commentary</h3>
+                        <button onclick="$('page=4;')"><h3>Commentary</h3></button>
                         <p>An Index and Commentary for the Contra Mormonem. Including redefined footnotes and verse connections.</p>
                     </div>
                     <div class="box y">
-                        <h3>Aqua Contra Vinum</h3>
+                        <button onclick="$('page=5;')"><h3>Aqua Contra Vinum</h3></button>
                         <p>A Tractate combating the use of Sacramental Water versus Wine.</p>
                     </div>
                     <div class="box r">
-                        <h3>Secendum Biblia</h3>
+                        <button onclick="$('page=6;')"><h3>Secendum Biblia</h3></button>
                         <p>A Short Tractate defining the lack of a Biblical Apostasy and the Book of Mormon.</p>
                     </div>
                     <div class="box lb">
-                        <h3>La Santa Iyetta</h3>
+                        <button onclick="$('page=7;')"><h3>La Santa Iyetta</h3></button>
                         <p>A Collection of Pseudo-Scriptural texts; namely the Book of Irkut, and the Book of Quarruiiq.</p>
                     </div>
                 </div>
+                <br><br>
+                <p class="note">Although portions of this text may seem antagonistic or contentions, they were only designed to provide a thoughtful rebuttal to Mormon beliefs. The use of the word Mormon was done merely out of convenience to the print copies and readability of the volume.</p>
             </div>
             <div class="sidebar">
                 <h3 class="not-hover fw">A Defense of the Kingdom</h3>
@@ -63,6 +65,10 @@
         <iframe src="https://classicmc-studios.github.io/mormon" frameborder="0" class=""></iframe>
     </div>
     <div incl="./body/scm.html" if="page==3"></div>
+    <div incl="./body/commentary.html" if="page==4"></div>
+    <div incl="./body/aqua.html" if="page==5"></div>
+    <div incl="./body/biblia.html" if="page==6"></div>
     <script src='https://snojs.github.io/sno/crystal.js'></script>
+    <script src='./index.js'></script>
 </body>
 </html>

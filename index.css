@@ -20,6 +20,12 @@
 h3:hover:not(.not-hover){
     color:gray;
 }
+.note{
+    margin-left:15px;
+    padding:10px;
+    font-style: italic;
+    background-color: rgba(211, 211, 211, 0.136);
+}
 .fw{
     font-weight: 100;
 }
