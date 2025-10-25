@@ -29,6 +29,10 @@ h3:hover:not(.not-hover){
 .fw{
     font-weight: 100;
 }
+.plr-xl{
+    padding-left: 50px;
+    padding-right: 50px;
+}
 .sidebar{
     margin-right: 30px;
     padding:20px;
