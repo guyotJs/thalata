@@ -203,8 +203,7 @@ let footnotes = [
   },
   {
     citation_number: 29,
-    "source": "Summa Theologiae",
-    "reference": "I, q. 3, a. 2"
+    scriptures: ["Summa Theologiae I, q. 3, a. 2"]
   },
   {
     citation_number: 30,
