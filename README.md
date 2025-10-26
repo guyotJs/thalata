@@ -1,2 +1,5 @@
-# thalata
-A collection of several different writings and tractates on the flaws in Mormon theology.
+# Thalata
+
+> Being a compilation of theological writings and tractates on Mormon theology
+
+The design is reminiscent of [Sefaria](https://sefaria.org)
