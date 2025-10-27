@@ -4,61 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thalata</title>
-    <link rel="stylesheet" href="./bc.css">
     <link rel="stylesheet" href="./index.css">
     <link rel="shortcut icon" href="th.png" type="image/x-icon">
 </head>
 <body data="{page:0}">
     <div class="head">
-        <button class="hover-gray"><img src="./th.png" width="25px" alt="Thalata"></button>&emsp;&emsp;
-        <button class="hover-gray" onclick="$('page=0;')">Texts</button>&emsp;&emsp;
-        <button class="hover-gray" onclick="$('page=1;')">Bible</button>&emsp;&emsp;
-        <button class="hover-gray" onclick="$('page=2;')">Book of Mormon</button>
+        <button><img src="./th.png" width="25px" alt="Thalata"></button>&emsp;&emsp;
+        <button onclick="$('page=0;')">Texts</button>&emsp;&emsp;
+        <button onclick="$('page=1;')">Bible</button>&emsp;&emsp;
+        <button onclick="$('page=2;')">Book of Mormon</button>
     </div>
-    <div if="page==0">
-        <div incl="./body/home.html" computer></div>
-        <div incl="./body/home-mobile.html" mobile></div>        
-    </div>
-    <div if="page==1">
-        <iframe src="https://classicmc-studios.github.io/bible" frameborder="0" class=""></iframe>
-    </div>
-    <div if="page==2">
-        <iframe src="https://classicmc-studios.github.io/mormon" frameborder="0" class=""></iframe>
-    </div>
-    <div if="page==3">
-        <div incl="./body/scm.html" computer></div>
-        <div incl="./body/scm-mobile.html" mobile></div>
-    </div>
-    <div if="page==4">
-        <!-- This functions both Mobile and Computer -->
-        <div incl="./body/commentary.html"></div>
-    </div>
-    <div if="page==5">
-        <div incl="./body/aqua.html" computer></div>
-        <div incl="./body/aqua-mobile.html" mobile></div>
-    </div>
-    <div if="page==6">
-        <div incl="./body/biblia.html" computer></div>
-        <div incl="./body/biblia-mobile.html" mobile></div>
-    </div>
-    <div if="page==7">
-        <div incl="./body/iyet.html" computer></div>
-        <div incl="./body/iyet-mobile.html" mobile></div>
-    </div>
-    <div if="page==8">
-        <div incl="./body/editio.html" computer></div>
-        <div incl="./body/editio-mobile.html" mobile></div>
-    </div>
-    <!--The Summa in French-->
-    <div if="page==9">
-        <div incl="./body/scm-french.html" computer></div>
-        <!-- <div incl="./body/iyet-mobile.html" mobile></div> -->
-    </div>
-    <!--The Summa OG in english-->
-    <div if="page==10">
-        <div incl="./body/editio-english.html" computer></div>
-        <!-- <div incl="./body/iyet-mobile.html" mobile></div> -->
-    </div>
+    <div incl="./body/home.html" if="page==0"></div>
+
+    <iframe src="https://classicmc-studios.github.io/bible" frameborder="0" if="page==1"></iframe>
+    <iframe src="https://classicmc-studios.github.io/mormon" frameborder="0" if="page==2"></iframe>
+
+    <div incl="./body/scm.html" if="page==3"></div>
+    <div incl="./body/commentary.html" if="page==4"></div>
+    <div incl="./body/aqua.html" if="page==5"></div>
+    <div incl="./body/biblia.html" if="page==6"></div>
+    <div incl="./body/iyet.html" if="page==7"></div>
+    <div incl="./body/editio.html" if="page==8"></div>
+    <div incl="./body/scm-french.html" if="page==9"></div>
+    <div incl="./body/editio-english.html" if="page==10"></div>
+    
     <script src='./sno.js'></script>
     <script src='./index.js'></script>
 </body>
