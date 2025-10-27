@@ -12,12 +12,12 @@
         <button><img src="./th.png" width="25px" alt="Thalata"></button>&emsp;&emsp;
         <button onclick="$('page=0;')">Texts</button>&emsp;&emsp;
         <button onclick="$('page=1;')">Bible</button>&emsp;&emsp;
-        <button onclick="$('page=2;')">Book of Mormon</button>
+        <button onclick="$('page=2;')">Theology</button>
     </div>
     <div incl="./body/home.html" if="page==0"></div>
 
     <iframe src="https://classicmc-studios.github.io/bible" frameborder="0" if="page==1"></iframe>
-    <iframe src="https://classicmc-studios.github.io/mormon" frameborder="0" if="page==2"></iframe>
+    <div incl="./theology/home.html" if="page==2"></div>
 
     <div incl="./body/scm.html" if="page==3"></div>
     <div incl="./body/commentary.html" if="page==4"></div>
