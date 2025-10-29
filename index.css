@@ -117,12 +117,12 @@ sup{
 }
 /*SIDEBAR IS NOT VISIBLE ON MOBILE*/
 .sidebar{
+    position:sticky; 
     margin-right: 30px;
     padding:20px;
     background-color: rgba(211, 211, 211, 0.136);
     min-width:200px;
     height:min-content;
-    position:sticky;
     top:0px;
 }
 .sidebar h3{

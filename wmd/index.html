@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thalata</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="shortcut icon" href="../th.png" type="image/x-icon">
+</head>
+<body data="{page:0}">
+    <div class="head">
+        <button><img src="../th.png" width="25px" alt="Thalata"></button>&emsp;&emsp;
+        <button onclick="$('page=0;')">Texts</button>&emsp;&emsp;
+        <button onclick="$('page=1;')">Bible</button>&emsp;&emsp;
+        <button onclick="$('page=2;')">Theology</button>
+    </div>
+
+    <div class="body" if="page==0">
+        <div class="boxes">
+            <p class="sans">&nbsp;&nbsp;&nbsp;Browse the Library</p>
+            <div class="grid-2">
+                <div class="lb box">
+                    <button onclick="$('page=1')" class=""><h3>SCM</h3></button>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi quas beatae voluptatem deleniti officiis nesciunt</p>
+                </div>
+                <div class="lb box">
+                    <button onclick="$('page=2')"><h3>Nature</h3></button>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi quas beatae voluptatem deleniti officiis nesciunt</p>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <h3>An Early Alpha Test</h3>
+            <hr><br>
+            <p>We are testing a more simple method for article creation using a custom markdown format. <b>.th</b></p>
+        </div>
+    </div>
+    <div class="converter" id="scm" if="page==1"></div>
+    <div class="converter" id="nature" if="page==2"></div>
+
+    <script src='../sno.js'></script>
+    <script src='../index.js'></script>
+    <script src="./converter.js"></script>
+</body>
+</html>
