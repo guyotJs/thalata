@@ -4,33 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thalata</title>
-    <link rel="stylesheet" href="./index.css">
-    <link rel="shortcut icon" href="th.png" type="image/x-icon">
+    <link rel="stylesheet" href="./lib/index.css">
+    <link rel="shortcut icon" href="./lib/th.png" type="image/x-icon">
 </head>
 <body data="{page:0}">
     <div class="head">
-        <button><img src="./th.png" width="25px" alt="Thalata"></button>&emsp;&emsp;
+        <button><img src="./lib/th.png" width="25px" alt="Thalata"></button>&emsp;&emsp;
         <button onclick="$('page=0;')">Texts</button>&emsp;&emsp;
         <button onclick="$('page=1;')">Bible</button>&emsp;&emsp;
         <button onclick="$('page=2;')">Theology</button>
     </div>
-    <div incl="./body/home.html" if="page==0"></div>
+    <div incl="./lib/home.html" if="page==0"></div>
     <iframe src="https://classicmc-studios.github.io/bible" frameborder="0" if="page==1"></iframe>
-    <div incl="./theology/home.html" if="page==2"></div>
+    <div incl="./lib/theology.html" if="page==2"></div>
 
-    <div incl="./body/scm.html" if="page==3"></div>
-    <div incl="./body/commentary.html" if="page==4"></div>
-    <div incl="./body/aqua.html" if="page==5"></div>
-    <div incl="./body/biblia.html" if="page==6"></div>
-    <div incl="./body/iyet.html" if="page==7"></div>
-    <div incl="./body/editio.html" if="page==8"></div>
-    <div incl="./body/scm-french.html" if="page==9"></div>
-    <div incl="./body/editio-english.html" if="page==10"></div>
-    <div incl="./theology/romans.html" if="page==11"></div>
-    <div incl="./theology/predestination.html" if="page==12"></div>
-    <div incl="./theology/nature.html" if="page==13"></div>
+    <div class="article" id="scm" if="page==3"></div>
+    <div incl="./assets/commentary.html" if="page==4"></div>
+    <div class="article" id="aqua" if="page==5"></div>
+    <div class="article" id="biblia" if="page==6"></div>
+    <div incl="./assets/iyet.html" if="page==7"></div>
+    <div incl="./assets/editio.html" if="page==8"></div>
+
+    <div class="article" id="nature" if="page==11"></div>
     
-    <script src='./sno.js'></script>
+    <script src='./lib/sno.js'></script>
+    <script src="./lib/index.js"></script>
     <script src='./index.js'></script>
 </body>
 </html>
