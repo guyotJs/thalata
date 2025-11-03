@@ -2,7 +2,7 @@
 
 __This Tractate comprimises the fundamental theological discrepencies between the use of water and wine in the Sacrament. The use of water in the Sacrament only coming into effect with Joseph F. Smith in the early 20th century.__
 
-~July 23, 2025~
+~Published on July 23, 2025~
 
 ## I—On the Use of Sacramental Wine by the Savior
 

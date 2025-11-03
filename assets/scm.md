@@ -2,7 +2,7 @@
 
 __The Summa Contra Mormonem is a collection of 18 points on the errors of Mormon Theology. It was originally composed of two volumes, but was merged into one. It was originally composed in Latin.__
 
-~October 28, 2025~
+~Published on October 28, 2025~
 
 ## I—On the Definition of God and Causation
 

@@ -15,10 +15,12 @@
         <button onclick="$('page=2;')">Theology</button>
     </div>
     <div incl="./lib/home.html" if="page==0"></div>
+    <div incl="./lib/maison.html" if="page==100"></div>
     <iframe src="https://classicmc-studios.github.io/bible" frameborder="0" if="page==1"></iframe>
     <div incl="./lib/theology.html" if="page==2"></div>
 
     <div class="article" id="scm" if="page==3"></div>
+    <div class="article" id="scm-french" if="page==101"></div>
     <div incl="./assets/commentary.html" if="page==4"></div>
     <div class="article" id="aqua" if="page==5"></div>
     <div class="article" id="biblia" if="page==6"></div>

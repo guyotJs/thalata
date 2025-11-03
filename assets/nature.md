@@ -2,7 +2,7 @@
 
 __This Short Theological Tractate systematically proves the theory of Predestination by the existance of a well aligned universe. Following the same theories as Haskell Curry to prove a identical set of inputs will produce an identical set of outputs given perfect equivelenance and ceteris paribus.__
 
-~October 28, 2025~
+~Published on October 28, 2025~
 
 ## I—On Required Inputs
 

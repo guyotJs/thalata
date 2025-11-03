@@ -2,7 +2,7 @@
 
 __This theological tractate is coming soon, and is anticipated to be released within the coming weeks alongside several other companion articles. This is designed to help the reader understand the historical Calvinist intepretation of Romans chapter 9.__
 
-~October 30, 2025~
+~Published on October 30, 2025~
 
 ## I—Coming Soon
 

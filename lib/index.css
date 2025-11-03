@@ -20,6 +20,9 @@
         display: grid;grid-template-columns: auto auto;
     }
     .mobile-header{display: none;}
+    .mobile-only{
+        display:none;
+   }
 }
 /*MOBILE*/
 @media screen and (max-width:999px) {
@@ -61,6 +64,9 @@ iframe{
     position:absolute;
     height:90%;
     width:100%;
+}
+.hv-no:hover{
+    text-decoration: line-through;
 }
 .boxes{
     max-width: 800px;

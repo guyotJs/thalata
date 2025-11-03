@@ -2,7 +2,7 @@
 
 __This Short Tractate addresses two fundamental claims of Mormonism: the Apostasy and the Book of Mormon. It is the shortest text published in Thalata.__
 
-~October 17, 2025~
+~Published on October 17, 2025~
 
 ## I—On an Apostasy in the Bible
 
