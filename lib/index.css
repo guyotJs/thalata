@@ -3,12 +3,17 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 
 *{
-  margin:0;
-  padding:0;
-  font-family: "EB Garamond";  
-  transition:0.3s;
-  color:rgb(72, 72, 72);
+    margin:0;
+    padding:0;
+    font-family: "EB Garamond";  
+    transition:0.3s;
+    color:white;
 }
+body{
+    background-color: #333331;
+}
+.box p,.note,.sidebar p, .sidebar em, .sidebar b, .sidebar a{color:#BBBBBB;}
+hr{border:0.5px solid #BBBBBB;}
 /*COMPUTER*/
 @media screen and (min-width:1000px) {
     .body{
@@ -37,7 +42,7 @@
 .head{
     padding:10px;
     margin-bottom:20px;
-    border-bottom:lightgray 1px solid;
+    border-bottom:#BBBBBB 1px solid;
 }
 .head button:hover{
     color:gray;
@@ -58,7 +63,7 @@ button{
     margin-left:15px;
     padding:10px;
     font-style: italic;
-    background-color: rgba(211, 211, 211, 0.136);
+    background-color: #2D2D2D;
 }
 iframe{
     position:absolute;
@@ -80,17 +85,18 @@ iframe{
 }
 h3{
     font-family:"Merriweather";
+    color:lightgray;
 }
 .underline{
     text-decoration: underline;
 }
-.mobile-bulk{font-style: italic;text-align: left;}
+.mobile-bulk{font-style: italic;text-align: left;color:#BBBBBB;}
 .box h3{
     font-weight:500;
     margin-bottom:5px;
 }
 .box h3:hover{
-    color:gray;
+    color:rgb(153, 153, 153);
 }
 
 .b{border-radius: 0;border-top: 4px solid rgb(111, 111, 196);}
@@ -111,7 +117,9 @@ h3{
 sup{
     font-family: bold;
     font-size:13px;
-    color:#a688fa;
+    /* color:#a688fa; */
+    color:rgb(96, 158, 216);
+    font-weight: 900;
 }
 .text-header{
     margin:6px;
@@ -126,7 +134,7 @@ sup{
     position:sticky; 
     margin-right: 30px;
     padding:20px;
-    background-color: rgba(211, 211, 211, 0.136);
+    background-color: #2D2D2D;
     min-width:200px;
     height:min-content;
     top:0px;
