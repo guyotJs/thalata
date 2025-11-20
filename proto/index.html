@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body data='{page:"home"}'>
+    Proto
+    <p react>{{page}}</p>
+    <a href="#home">hjem</a>
+    <a href="#pagea">gotoa</a>
+    <a href="#pageb">gotob</a>
+
+    <script src="../lib/sno.js"></script>
+    <script>
+        let pages = ["#home","#pagea","#pageb"];
+
+        function findPage(){
+            for(let i=0;i<pages.length;i++){
+                if(window.location.href.includes(pages[i])){
+                    data.page = pages[i]
+                }
+            }
+        };findPage();
+        window.addEventListener('popstate',function (event){
+            findPage();
+        });
+    </script>
+</body>
+</html>
