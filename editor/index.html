@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Editor</title>
+    <link rel="shortcut icon" href="../lib/thlb.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body data="{txt:'',isvis:true}">
+    <textarea if="isvis" id="txt"
+        style="
+            position: fixed;
+            border:1px solid rgb(66, 66, 66);
+            background-color: #2D2D2D;
+            color:white;
+            margin-right: 70px;
+            max-width: 416px;
+            width: 50%;
+            box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.321);
+            border-radius: 5px;
+            z-index: 1000;
+            height:300px;
+            padding:20px;
+            bottom:0;
+            right:0;
+            margin-bottom:30px;
+        "
+    bind="txt" placeholder="Edit here...">
+# Your Title
+
+__Summary Here__
+
+~Published on...~
+
+## Section I
+
+lorem ipsum dolor sit amet consecutor $1$
+
+[[1|Foot 1]]
+    </textarea>
+    <div id="gay"></div>
+    <button style="position:fixed; bottom:0; right:0; margin:5px; opacity:0.3;" if="isvis" onclick="$('isvis=!isvis;')"><b>Hide</b> Editor</button>
+    <button style="position:fixed; bottom:0; right:0; margin:5px; opacity:0.3;" if="!isvis" onclick="$('isvis=!isvis;')"><b>Show</b> Editor</button>
+    <script src='https://snojs.github.io/sno/crystal.js'></script>
+    <script src="./index.js"></script>
+    <script>
+        const g = document.getElementById("gay");
+        g.innerHTML = '\n        <div class="body">\n            <div class="body-text">\n                <div class="mobile-header">\n                <br>\n                <p class="text-header">Your Title</p>\n                <p class="mobile-bulk">\n                    Summary Here\n                </p><br>\n            </div>\n    \n    <p class="text-header">Section I</p>\n            <p class="bulk-text">\n                &emsp;&emsp;lorem ipsum dolor sit amet consecutor <sup>[1]</sup>\n            </p>\n            <br><br>\n        \n        </div>\n        <div class="sidebar">\n            <h3>Your Title</h3>\n            <hr><br>\n            <p>Summary Here</p>\n            <br>\n            <em>Published on...</em>\n            <br><br>\n            <h3>Footnotes</h3>\n            <hr><br>\n    <p><sup>[1]</sup> Foot 1</p>\n</div>\n        </div>';
+        document.getElementById("txt").addEventListener('input',function(){
+            if(data.txt !=''){setTimeout(()=>{g.innerHTML = parseMarkup(data.txt);},0)}
+        });
+    </script>
+</body>
+</html>
